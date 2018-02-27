@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include mapinline.svg %}
+    {% include header.html %}
+
+      <div class="fixed top-0 left-0 right-0 bottom-0 max-width-xxl mx-auto">
+        <div class="visible-grid absolute top-0 left-l right-l bottom-0"></div>
+      </div>
+
+    <div class="main wrap">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      $(document).ready(function(){
+        $('.slider').slick({
+          infinite: false,
+          adaptiveHeight: true,
+          dots: true,
+          slidesToScroll: 1,
+        });
+        // Scroll To
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+    });
+    </script>
+
+  </body>
+
+</html>

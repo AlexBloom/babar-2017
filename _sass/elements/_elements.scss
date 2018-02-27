@@ -1,0 +1,68 @@
+@import
+  "btns",
+  "icons",
+  "links",
+  "media"
+;
+
+table{
+ border-spacing: 0;
+ margin: $space-m 0;
+ padding: 0;
+ border: 1px solid;
+ border-collapse: separate;
+ border-spacing: 0;
+ max-width: 100%;
+ width: 100%;
+}
+.table-navy{
+  thead{
+    background-color:$navy;
+    color:$white;
+  }
+}
+.table-red{
+  thead{
+    background-color:$red;
+    color:$white;
+  }
+}
+thead{
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+tbody{
+  tr:nth-of-type(odd){
+    //background-color:rgba(0,0,0,.1);
+  }
+  tr:last-child{
+    td{
+      border-top:1px solid;
+    }
+    //background-color:rgba(0,0,0,.1);
+  }
+}
+th{
+  font-weight: 600;
+}
+td, th{
+  line-height:1.5;
+  padding:$space-s $space-m;
+  vertical-align: top;
+  //border-bottom:1px solid $white50;
+  //border-left:1px solid $white50;
+}
+th{
+  text-align:right;
+  //font-family:$monospace-font-family;
+}
+td{
+  text-align:right;
+  font-family:$monospace-font-family;
+}
+th:first-child{
+  text-align:left;
+}
+td:first-child{
+  text-align:left;
+}
