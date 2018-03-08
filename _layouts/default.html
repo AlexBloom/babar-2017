@@ -7,12 +7,13 @@
     {% include mapinline.svg %}
     {% include header.html %}
 
-      <div class="fixed top-0 left-0 right-0 bottom-0 max-width-xxl mx-auto">
-        <div class="visible-grid absolute top-0 left-l right-l bottom-0"></div>
-      </div>
 
-    <div class="main wrap">
+    <div class="main wrap py-xl relative z1 px-l cf">
         {{ content }}
+    </div>
+
+    <div class="fixed top-0 left-0 right-0 bottom-0 max-width-xxl mx-auto">
+      <div class="visible-grid absolute top-0 left-l right-l bottom-0"></div>
     </div>
 
     {% include footer.html %}
