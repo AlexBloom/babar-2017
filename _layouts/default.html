@@ -3,18 +3,18 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="border-left-thick border-right-thick navy">
     {% include mapinline.svg %}
     {% include header.html %}
 
 
-    <div class="main wrap py-xl relative z1 px-l cf">
+    <div class="main wrap cf">
         {{ content }}
     </div>
 
-    <div class="fixed top-0 left-0 right-0 bottom-0 max-width-xxl mx-auto">
+    <!-- <div class="fixed top-0 left-0 right-0 bottom-0 max-width-xxl mx-auto">
       <div class="visible-grid absolute top-0 left-l right-l bottom-0"></div>
-    </div>
+    </div> -->
 
     {% include footer.html %}
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -33,6 +33,7 @@
           adaptiveHeight: true,
           dots: true,
           slidesToScroll: 1,
+          slidesToShow: 1,
         });
         // Scroll To
         $(function() {
