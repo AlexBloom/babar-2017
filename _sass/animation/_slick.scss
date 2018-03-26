@@ -20,14 +20,20 @@
     display: block;
     margin: 0;
     padding: 0;
+    cursor:grab;
 
     &:focus {
         outline: none;
     }
+    &:active{
+      cursor:grabbing;
+    }
 
     &.dragging {
-        cursor: pointer;
-        cursor: hand;
+        //cursor: pointer;
+        //cursor: hand;
+
+        cursor:grabbing;
     }
 }
 .slick-slider .slick-track,
@@ -66,6 +72,9 @@
     [dir="rtl"] & {
         float: right;
     }
+    background-color:$white;
+    box-shadow: 0 4px 8px 0 $black20,;
+    margin: .5rem;
     img {
         display: block;
     }

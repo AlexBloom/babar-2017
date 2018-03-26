@@ -1,17 +1,23 @@
 
-<header class="site-header fixed z3 s-hide right-0 left-0 bg-navy" style="height:2.5rem;">
+<header class="site-header fixed z3 right-0 left-0 bg-navy" style="height:2.5rem;">
   <div class="relative mx-auto max-width-xxl p-0 cf">
+    {% assign url_parts = page.url | split: '/' %}
+
     <div class="col col-3">
-      <div class="logo">
-        <h4 class="white"><a href="index" class="inline-block pt-s px-m white"> Bike &amp; Build </a> </h4>
+      <div class="logo cf">
+          <a href="{{site.baseurl}}/" class="inline-block cf pt-xs px-m white link {% if page.url == '/' %} current border-bottom {% endif %}">
+              <div class="col" style="width:2rem;">
+                <img src="/img/ui/bb_logo_house.png" alt="">
+              </div>
+              <div class="col pt-xs h5">Bike &amp; Build </div>
+          </a>
       </div>
     </div>
     <div class="col col-9">
-      <nav class="site-nav float-right">
-          <a href="index"     class="inline-block mx-m pt-s h5 link white">2017</a>
-          <a href="2017"      class="inline-block mx-m pt-s h5 link white">Timeline</a>
-          <a href="Financials"class="inline-block mx-m pt-s h5 link white">Financials</a>
-          <a href="Onward"    class="inline-block mx-m pt-s h5 link white">Onward</a>
+      <nav class=" float-right mr-m">
+          <a href="{{site.baseurl}}/highlights/"class="inline-block mr-m pt-s h5 link white {% if url_parts[1] == 'highlights' %} current border-bottom {% endif %}">Timeline</a>
+          <a href="{{site.baseurl}}/financials/"class="inline-block mr-m pt-s h5 link white {% if url_parts[1] == 'financials' %} current border-bottom {% endif %}">Financials</a>
+          <a href="{{site.baseurl}}/onward/"    class="inline-block mr-m pt-s h5 link white {% if url_parts[1] == 'onward' %} current border-bottom {% endif %}">Onward</a>
       </nav>
     </div>
 

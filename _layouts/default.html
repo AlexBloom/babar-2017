@@ -20,11 +20,11 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript">
     if (typeof jQuery == 'undefined') {
-        document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+        document.write(unescape("%3Cscript src='{{site.baseurl}}/js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
     }
     </script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/slick.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/js/wow.min.js"></script>
     <script>
       new WOW().init();
       $(document).ready(function(){
@@ -33,7 +33,22 @@
           adaptiveHeight: true,
           dots: true,
           slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToShow: 1
+          //mobileFirst: true
+          // responsive:[
+          //   {
+          //     breakpoint: 1536,
+          //     settings: {
+          //       slidesToShow: 2
+          //     }
+          //   },
+          //   {
+          //     breakpoint: 768,
+          //     settings: {
+          //       slidesToShow: 1
+          //     }
+          //   },
+          // ]
         });
         // Scroll To
         $(function() {
