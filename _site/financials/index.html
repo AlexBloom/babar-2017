@@ -42,7 +42,7 @@
 </head>
 
 
-  <body class="border-left-thick border-right-thick navy">
+  <body class="">
     <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 800" enable-background="new 0 0 1200 800" xml:space="preserve">
   <defs>
     <symbol id="MAP" viewBox="0 0 1200 800">
@@ -319,8 +319,8 @@
     <div class="main wrap cf">
         <section id="Financials" class="relative z1 max-width-xxl mx-auto px-l py-xl">
 
-  <h1 class="type-grow-2 text-center condensed wow fadeInUp">2017&ndash;2016</h1>
-  <h1 class="text-center wow fadeInUp">Statement of Financials</h1>
+  <h1 class="type-grow-2 text-center condensed wow fadeInUp navy">2017&ndash;2016</h1>
+  <h1 class="text-center wow fadeInUp" navy>Statement of Financials</h1>
 
 
   <!-- audited financial statements -->
@@ -360,9 +360,9 @@
     </table>
   </div>
   <div class="float-center col-12 m-col-10 cf">
-    <div class="col col-12 l-col-6">
-      <h3 class=" text-center red wow fadeInUp">Affordable Housing Grants</h3>
-      <div class="overflow-scroll wow fadeInUp">
+    <div class="col col-12 l-col-6 wow fadeInUp">
+      <h3 class=" text-center red ">Affordable Housing Grants</h3>
+      <div class="overflow-scroll ">
         <table class="mx-auto col-12 l-col-11 mt-l mb-xxl table-red red ">
           <thead>
             <tr><th>Grant Type</th> <th> Value </th></tr>
@@ -379,9 +379,9 @@
         </table>
       </div>
     </div>
-    <div class="col col-12 l-col-6">
-      <h3 class=" text-center red wow fadeInUp">Program Expenses</h3>
-      <div class="overflow-scroll wow fadeInUp">
+    <div class="col col-12 l-col-6 wow fadeInUp">
+      <h3 class=" text-center red ">Program Expenses</h3>
+      <div class="overflow-scroll ">
         <table class="mx-auto col-12 l-col-11 mt-l mb-xxl table-red red">
           <thead>
           <tr>  <th>Expense</th><th> Value</th> </tr>
@@ -407,14 +407,14 @@
     <!-- <h1 class="story-number condensed text-center mb-0 wow">
       <span class="wow" data-wow-delay=".1s">8</span><span class="wow" data-wow-delay=".15s">4</span><span class="wow" data-wow-delay=".2s">%</span>
     </h1> -->
-    <h2 class="text-center max-width-l bold mx-auto">Since 2012, we’ve directed 76% of our spending towards supporting our mission.</h2>
+    <h2 class="text-center max-width-l bold mx-auto wow fadeInUp">Since 2012, we’ve directed 76% of our spending towards supporting our mission.</h2>
 
     <!-- <h2 class="story-metric text-center red wow fadeInUp">of money raised directly supports Bike &amp; Build's mission.</h2> -->
   </div>
 
-  <div class="float-center col-12 m-col-10 my-xxl ">
+  <div class="float-center col-12 m-col-10 my-xxl wow fadeInUp">
     <h3 class="wow fadeInUp text-center">Yearly Affordable Housing Grants</h3>
-    <div class="overflow-scroll mt-0 mb-xxl pt-xl px-l wow fadeInUp">
+    <div class="overflow-scroll mt-0 mb-xxl pt-xl px-l ">
       <div class="table navy width-100">
       <div class="table-cell align-bottom px-s border-box" style="min-width:2rem;width:10%;height:500px"> <div class="rotate-n45"> $394,998 </div> <div class="bg-dot-grid-red  " style="height:39.4998%;"> </div>   <div class="text-center bold py-m my-m"> 2007 </div>  </div>
       <div class="table-cell align-bottom px-s border-box" style="min-width:2rem;width:10%;height:500px"> <div class="rotate-n45"> $494,609 </div> <div class="bg-dot-grid-navy " style="height:49.4609%;"> </div>   <div class="text-center bold py-m my-m"> 2008 </div>  </div>
@@ -432,7 +432,7 @@
   </div>
 
   <section class="py-l">
-    <p class="text-center"><a href="onward.html" class="button">View 2018 Strategic Plan &rarr;</a></p>
+    <p class="text-center"><a href="/onward/" class="button">View 2018 Strategic Plan &rarr;</a></p>
   </section>
 
 </section>
@@ -479,22 +479,22 @@
           adaptiveHeight: true,
           dots: true,
           slidesToScroll: 1,
-          slidesToShow: 1
-          //mobileFirst: true
-          // responsive:[
-          //   {
-          //     breakpoint: 1536,
-          //     settings: {
-          //       slidesToShow: 2
-          //     }
-          //   },
-          //   {
-          //     breakpoint: 768,
-          //     settings: {
-          //       slidesToShow: 1
-          //     }
-          //   },
-          // ]
+          slidesToShow: 1,
+          mobileFirst: true,
+          responsive:[
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+          ]
         });
         // Scroll To
         $(function() {

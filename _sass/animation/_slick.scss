@@ -69,12 +69,13 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    //min-height:75vh;
     [dir="rtl"] & {
         float: right;
     }
     background-color:$white;
-    box-shadow: 0 4px 8px 0 $black20,;
-    margin: .5rem;
+    //box-shadow: 0 4px 8px 0 $black20,;
+    //margin: .5rem;
     img {
         display: block;
     }

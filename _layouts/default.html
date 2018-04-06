@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="border-left-thick border-right-thick navy">
+  <body class="">
     {% include mapinline.svg %}
     {% include header.html %}
 
@@ -33,22 +33,22 @@
           adaptiveHeight: true,
           dots: true,
           slidesToScroll: 1,
-          slidesToShow: 1
-          //mobileFirst: true
-          // responsive:[
-          //   {
-          //     breakpoint: 1536,
-          //     settings: {
-          //       slidesToShow: 2
-          //     }
-          //   },
-          //   {
-          //     breakpoint: 768,
-          //     settings: {
-          //       slidesToShow: 1
-          //     }
-          //   },
-          // ]
+          slidesToShow: 1,
+          mobileFirst: true,
+          responsive:[
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+          ]
         });
         // Scroll To
         $(function() {

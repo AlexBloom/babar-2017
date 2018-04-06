@@ -42,7 +42,7 @@
 </head>
 
 
-  <body class="border-left-thick border-right-thick navy">
+  <body class="">
     <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 800" enable-background="new 0 0 1200 800" xml:space="preserve">
   <defs>
     <symbol id="MAP" viewBox="0 0 1200 800">
@@ -457,22 +457,22 @@
           adaptiveHeight: true,
           dots: true,
           slidesToScroll: 1,
-          slidesToShow: 1
-          //mobileFirst: true
-          // responsive:[
-          //   {
-          //     breakpoint: 1536,
-          //     settings: {
-          //       slidesToShow: 2
-          //     }
-          //   },
-          //   {
-          //     breakpoint: 768,
-          //     settings: {
-          //       slidesToShow: 1
-          //     }
-          //   },
-          // ]
+          slidesToShow: 1,
+          mobileFirst: true,
+          responsive:[
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+          ]
         });
         // Scroll To
         $(function() {
