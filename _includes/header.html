@@ -3,17 +3,17 @@
   <div class="relative mx-auto max-width-xxl p-0 cf">
     {% assign url_parts = page.url | split: '/' %}
 
-    <div class="col col-3">
+    <div class="col col-2 s-col-4">
       <div class="logo cf">
-          <a href="{{site.baseurl}}/" class="inline-block cf pt-xs px-m white link {% if page.url == '/' %} current border-bottom {% endif %}">
+          <a href="{{site.baseurl}}/" class="inline-block cf pt-xs px-m white link">
               <div class="col" style="width:2rem;">
                 <img src="/img/ui/bb_logo_house.png" alt="">
               </div>
-              <div class="col pt-xs h5">Bike &amp; Build </div>
+              <div class="col pt-xs h5 s-hide">Bike &amp; Build </div>
           </a>
       </div>
     </div>
-    <div class="col col-9">
+    <div class="col col-10 s-col-8">
       <nav class=" float-right mr-m">
           <a href="{{site.baseurl}}/highlights/"class="inline-block mr-m pt-s h5 link white {% if url_parts[1] == 'highlights' %} current border-bottom {% endif %}">Highlights</a>
           <a href="{{site.baseurl}}/financials/"class="inline-block mr-m pt-s h5 link white {% if url_parts[1] == 'financials' %} current border-bottom {% endif %}">Financials</a>
