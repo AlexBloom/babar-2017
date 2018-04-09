@@ -236,7 +236,7 @@ $width-xxxl: 128rem;
 .height-1-3{height:33.3333333vh;}
 .height-2-3{height:66.6666666vh;}
 
-.max-height-0{height:0;}
+.max-height-0{max-height:0;}
 
   /*
    * Aspect Ratio Control on divs with fluid, none or variable content.

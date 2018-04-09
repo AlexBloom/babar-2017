@@ -305,7 +305,7 @@
     </div>
     <div class="col col-10 s-col-8">
       <nav class=" float-right mr-m">
-          <a href="/highlights/"class="inline-block mr-m pt-s h5 link white ">Highlights</a>
+          <a href="/"class="inline-block mr-m pt-s h5 link white ">Highlights</a>
           <a href="/financials/"class="inline-block mr-m pt-s h5 link white ">Financials</a>
           <a href="/onward/"    class="inline-block mr-m pt-s h5 link white  current border-bottom ">Onward</a>
       </nav>
@@ -322,8 +322,8 @@
 
       <header class="py-xl">
         <div class="mx-auto col-2 border-top border-red"></div>
-        <h1 class=" caps bold mt-xl text-center red wow fadeInUp">Vision for the Future</h1>
-        <div class="col-12 m-col-8 l-col-6 mb-xl mx-auto red wow fadeInUp">
+        <h1 class="caps bold mt-xl text-center navy wow fadeInUp">Vision for the Future</h1>
+        <div class="col-12 m-col-8 l-col-6 mb-xl mx-auto navy wow fadeInUp">
           <p class="h3">Overview of current state of Strategic Plan</p>
           <p class="">The operative word for Bike & Build’s future is “diversity.” As we move forward and begin enacting our new strategic plan, we are looking for ways to diversify how we are accomplishing our mission. While we have deep-rooted traditions from the past 15 years that provide a foundation for success, we are excited to explore ways to expand our approach and cultivating organizational growth. We hope to benefit the affordable housing cause in new ways while continuing to empower young adults and foster a generation committed to civic engagement.</p>
           <p>Although the strategic plan is still in the works, it is likely to incorporate innovative programming formats; a commitment to cycling safety advocacy; protecting the organization’s financial sustainability; generating new and long-term partnerships; and expanding our rider pool to better reflect the diverse population of America.</p>
@@ -341,11 +341,11 @@
           <img src="/img/content/partners/2017_partners_navy.jpg" alt="">
         </div>
         <div class="cf col-12 m-col-8 l-col-4 mx-auto">
-            <p class="p-l text-center my-xxl"><a class="button" href="https://bikeandbuild.org/about/partnership/get-involved/">Partner With Us &rarr;</a></p>
+            <p class="p-l text-center my-xl"><a class="button" href="https://bikeandbuild.org/about/partnership/get-involved/">Partner With Us &rarr;</a></p>
         </div>
       </section>
       <section class="cf py-xl navy">
-        <div class="cf py-xl mx-auto col-12 m-col-8">
+        <div class="cf mx-auto col-12 m-col-8">
           <div class="col col-12 m-col-6 py-l text-center">
             <h2 class="h3 caps ">Learn More</h2>
             <ul class="list-reset cf">
@@ -368,14 +368,14 @@
       </section>
     </div>
 
-  <section class="cf red">
+  <!-- <section class="cf red">
     <div class="pt-xl pb-m text-center">
       <p>
         <a href="#Intro"  class="link inline-block circle red border pt-s" style="width:2.5rem; height:2rem;" > &uarr; </a>
       </p>
       <p><a href="#Intro" class="link red">Back to Top</a></p>
     </div>
-  </section>
+  </section> -->
 
 </section>
 
@@ -453,6 +453,34 @@
             }
           });
         });
+        // Expanding classes
+        var maxheight=88;
+        var showText = "Read Interview";
+        var hideText = "Hide Interview";
+
+        $('.textContainer_Truncate').each(function () {
+          var text = $(this);
+          if (text.height() > maxheight){
+              // text.css({ 'overflow': 'hidden','height': maxheight + 'px' });
+              text.addClass('max-height-0');
+              var link = $('<a class="navy" href="#">' + showText + '</a>');
+              var linkDiv = $('<div></div>');
+              linkDiv.append(link);
+              $(this).after(linkDiv);
+
+              link.click(function (event) {
+                event.preventDefault();
+                if (text.height() > maxheight) {
+                    $(this).html(showText);
+                    text.addClass('max-height-0');
+                } else {
+                    $(this).html(hideText);
+                    text.removeClass('max-height-0');
+                }
+              });
+          }
+        });
+
     });
     </script>
 

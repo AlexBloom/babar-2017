@@ -2,7 +2,7 @@
 layout: default
 title: Bike &amp; Build 2017 Annual Report
 ---
-<div class=" relative z1">
+<div class="relative z1">
 
   <div class="cf py-xl px-l bg-navy">
     <div class="mx-auto my-auto">
@@ -36,7 +36,7 @@ title: Bike &amp; Build 2017 Annual Report
         <h1 id="YearTitle" class="h1 type-grow-2 condensed">2017</h1>
         <h2 id="" class="h1 caps bold">Annual Report</h2>
         <div class="pt-xl pb-m text-center">
-          <p><a href="#letter" class="link white">Highlights</a></p>
+          <p><a href="#letter" class="link white">Read the Report</a></p>
           <p>
             <a href="#letter"  class="link inline-block circle white border pt-s" style="width:2.5rem; height:2rem;" > &darr; </a>
           </p>
@@ -45,24 +45,250 @@ title: Bike &amp; Build 2017 Annual Report
     </div>
   </div>
 
-  <!-- <div class="cf" style="min-height:30rem; height:66vh; max-height:40rem;">
-
-  </div> -->
-
-  <div id="letter" class="cf py-xxl px-m">
-    <div  class="col-12 max-width-l p-m mx-auto bg-white shadow wow fadeInUp" data-wow-delay=".1s" data-wow-offset="200">
-      {% include_relative content/letter.html %}
-    </div>
-    <div class="py-xl">
-      <a href="highlights" class="button mr-m">Launch Report &rarr;</a>
-    </div>
+  <!-- Blueprint -->
+  <div class="fixed top-0 bottom-0 left-l right-l z-1 blueprint">
   </div>
 
-  <p class="text-center pt-l">  <a href="#letter" class="button-secondary">  <span class="white">What is Bike and Build? &darr; </span></a> </p>
 
-  <div class="cf bg-white pb-xxl px-l">
-    <div class="mx-auto col-12 xl-col-10">
+  <!-- Letter -->
+
+  <div id="letter" class="cf py-xxl px-l relative">
+
+    <div  class="col-12 max-width-l my-l p-m mx-auto bg-white shadow wow fadeInUp relative z2" data-wow-delay=".1s" data-wow-offset="200">
+      {% include_relative content/letter.html %}
+    </div>
+    <div class="absolute overflow-hidden top-0 bottom-0 left-0 right-0">
+      <div class="cf">
+        <div class="col col-10 m-col-6 p-m">
+          <img class="shadow float-right max-width-s s-col-10 m-col-8" src="{{site.baseurl}}/img/content/letter/nus-sunflowers.jpg" alt="">
+        </div>
+      </div>
+      <div class="cf">
+        <div class="float-right col-10 m-col-8  xl-col-5 py-l">
+          <div class="float-right col-12 l-col-6 xl-col-10 shadow">
+            <img class="shadow" src="{{site.baseurl}}/img/content/letter/nus-haybail.jpg" alt="">
+          </div>
+        </div>
+        <div class="float-left  col-10 m-col-8 xl-col-5 py-l">
+          <div class="float-left col-12 l-col-6 xl-col-10 shadow">
+            <img class="shadow" src="{{site.baseurl}}/img/content/letter/dw-coast.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+      <div class="cf">
+        <div class="float-right col-10 m-col-6 p-m">
+            <img class="shadow float-left s-col-10 m-col-8" src="{{site.baseurl}}/img/content/letter/nus-glaciers.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="py-xl">
+      <a href="highlights" class="button mr-m">Launch Report &rarr;</a>
+    </div> -->
+  </div>
+
+  <!-- Background -->
+  <div class="cf pb-xxl px-l relative z2">
+    <div class="mx-auto bg-white col-12 xl-col-10 pt-m shadow">
       {% include_relative content/background.html %}
     </div>
   </div>
+</div>
+
+<!-- Highlights -->
+<div class="py-xl relative z2 px-l mx-auto">
+  <div class="py-xxl">
+    <h1 class="caps bold text-center navy wow fadeInUp" data-wow-delay=".1s" data-wow-offset="200">2017 Highlights</h1>
+    <!-- <section class="cf red">
+      <div class="pt-xl pb-m text-center">
+        <p><a href="#Intro" class="link red">scroll</a></p>
+        <p>
+          <a href="#fact-1"  class="link inline-block circle red border pt-s" style="width:2.5rem; height:2rem;" > &darr; </a>
+        </p>
+      </div>
+    </section> -->
+  </div>
+
+  <section id="fact-1" class="cf py-xl">
+    <div class="col col-12 text-center">
+      <!-- <div class="node border-top width-xs"> </div> -->
+      <h5 class="pt-xl caps bold">We welcomed</h5>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">1</span><span class="wow fadeIn" data-wow-delay=".2s" data-wow-offset="200">7</span><span class="wow fadeIn" data-wow-delay=".3s" data-wow-offset="200">7</span>
+      </h2>
+      <h3 class="story-metric">Riders</h3>
+    </div>
+    <div class="col-12 m-col-10 l-col-8 xl-col-6 mx-auto">
+      {% include_relative content/riders.html %}
+    </div>
+  </section>
+
+  <section class="cf py-xl">
+
+    <div class="text-center col-12 mx-auto">
+      <div class=" py-xl">
+
+          <h4 class="pt-xl caps bold">They Averaged</h4>
+          <h2 class="story-number condensed">
+            <span class="wow fadeIn" data-wow-delay=".1s">$</span><span class="wow fadeIn" data-wow-delay=".2s">5,</span><span class="wow fadeIn" data-wow-delay=".3s">0</span><span class="wow fadeIn" data-wow-delay=".4s">9</span><span class="wow fadeIn" data-wow-delay=".5s">5</span>
+          </h2>
+          <h3 class="story-metric">In Fundraising</h3>
+
+      </div>
+    </div>
+    <div class="mx-auto col-12 xl-col-10">
+      {% include_relative content/topfundraisers.html %}
+    </div>
+  </section>
+
+  <section class="cf py-xl">
+    <!-- <div class="col col-12 m-col-6">
+      <p></p>
+    </div> -->
+    <div class="col-12 l-col-10 text-center mx-auto">
+      <h4 class="pt-xl caps bold ">We Awarded </h4>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">6</span>
+      </h2>
+      <h3 class="story-metric">Scholarships</h3>
+    </div>
+    <div class="mx-auto col-12 xl-col-10 wow fadeInUp">
+      {% include_relative content/scholarships.html %}
+    </div>
+  </section>
+
+  <section class="cf py-xl overflow-hidden">
+    <div class=" col-12 l-col-10 mx-auto text-center">
+      <h4 class="pt-xl caps bold">We Rode</h4>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">4</span><span class="wow fadeIn" data-wow-delay=".2s" data-wow-offset="200">7</span><span class="wow fadeIn" data-wow-delay=".3s" data-wow-offset="200">8,</span><span class="wow fadeIn" data-wow-delay=".4s" data-wow-offset="200">2</span><span class="wow fadeIn" data-wow-delay=".5s" data-wow-offset="200">8</span><span class="wow fadeIn" data-wow-delay=".6s" data-wow-offset="200">5</span>
+      </h2>
+      <h3 class="story-metric">Total Miles</h3>
+    </div>
+    <div class="wow fadeInUp">
+      {% include_relative content/map.html %}
+    </div>
+  </section>
+
+  <section class="cf py-xl">
+    <div class="col col-12 text-center mx-auto">
+      <h4 class="pt-xl caps bold">We Volunteered</h4>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">1</span><span class="wow fadeIn" data-wow-delay=".2s" data-wow-offset="200">1,</span><span class="wow fadeIn" data-wow-delay=".3s" data-wow-offset="200">9</span><span class="wow fadeIn" data-wow-delay=".4s" data-wow-offset="200">2</span><span class="wow fadeIn" data-wow-delay=".5s" data-wow-offset="200">8</span>
+      </h2>
+      <h3 class="story-metric">Hours on Build Sites</h3>
+      <p class="wow fadeInUp">Over 51 build days swinging hammers.</p>
+      <div class="max-width-s mx-auto py-l">
+        <img class="shadow" src="{{site.baseurl}}/img/content/hours/hours.jpg" alt="A rider from the Central US route using a jackhammer on a build site.">
+      </div>
+    </div>
+  </section>
+
+  <section class="cf py-xl">
+    <div class="col-12 text-center mx-auto">
+      <h4 class="pt-xl caps bold">We Granted</h4>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">$</span><span class="wow fadeIn" data-wow-delay=".2s" data-wow-offset="200">2</span><span class="wow fadeIn" data-wow-delay=".3s" data-wow-offset="200">2</span><span class="wow fadeIn" data-wow-delay=".4s" data-wow-offset="200">0,</span><span class="wow fadeIn" data-wow-delay=".5s" data-wow-offset="200">0</span><span class="wow fadeIn" data-wow-delay=".6s" data-wow-offset="200">0</span><span class="wow fadeIn" data-wow-delay=".7s" data-wow-offset="200">0</span>
+      </h2>
+      <h3 class="story-metric">To Affordable Housing Organizations</h3>
+    </div>
+    <div class="col-10 m-col-8 mx-auto wow fadeInUp">
+      {% include_relative content/grants.html %}
+    </div>
+  </section>
+
+  <section class="cf py-xl">
+    <div class="col-12 text-center mx-auto">
+      <h4 class="pt-xl caps bold">We Impacted</h4>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">2</span><span class="wow fadeIn" data-wow-delay=".2s" data-wow-offset="200">5</span><span class="wow fadeIn" data-wow-delay=".3s" data-wow-offset="200">0</span>
+      </h2>
+      <h3 class="story-metric">Grant Recipients</h3>
+    </div>
+    <div class="mx-auto col-12 xl-col-10">
+      {% include_relative content/grantees.html %}
+    </div>
+  </section>
+
+  <section class="cf py-xl">
+    <div class="col-12 text-center mx-auto">
+      <h4 class="pt-xl caps bold">We Added</h4>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">1</span>
+      </h2>
+      <h3 class="story-metric">New Ride</h3>
+    </div>
+    <div class="col-12 max-width-m mx-auto py-l wow fadeInUp" data-wow-delay=".1s" data-wow-offset="200">
+      <img class="fit shadow" src="/img/cropped/travismanion/TMF.jpg" alt="Travis Manion Riders in Front of Washington Monument">
+    </div>
+    <div class="col-12 max-width-s mx-auto py-l wow fadeInUp" data-wow-delay=".2s" data-wow-offset="200">
+      <h3 class="bold story-metric-secondary pt-m">Travis Manion Foundation</h3>
+      <p class="measure">In the spirit of expanding our offerings and finding new ways to achieve our mission, Bike & Build partnered with the Travis Manion Foundation for a 377 mile ride from Pittsburgh to DC along the Great Allegheny Passage and C&O Canal Trail in September of 2017. During the ride, the team of 10 veterans and 2 Bike & Build alumni stopped to volunteer and build homes with affordable housing organizations. The ride was a tremendous success thanks to the Travis Manion Foundation and the lively veterans that came out to ride for the affordable housing cause and to honor their fallen brothers and sisters.</p>
+    </div>
+  </section>
+
+  <section class="cf py-xl">
+    <div class="col-12 text-center mx-auto">
+      <h4 class="pt-xl caps bold">We maintained</h4>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">1</span><span class="wow fadeIn" data-wow-delay=".2s" data-wow-offset="200">0</span><span class="wow fadeIn" data-wow-delay=".3s" data-wow-offset="200">0</span><span class="wow fadeIn" data-wow-delay=".4s" data-wow-offset="200">%</span>
+      </h2>
+      <h3 class="story-metric">Focus on Safety</h3>
+      <p class="text-left measure mx-auto">Safety remains the number one focus of Bike & Build programming. Our safety protocols continue to evolve as we build upon our past standards; here we reiterate protocols enacted in years prior and detail expansions made in 2017. We will continue to hold our riders to the highest safety standards while advocating for shared roads. For more on our safety program, please visit our website’s <a href="https://bikeandbuild.org/prospective-riders/safety/">Safety page</a>.</p>
+    </div>
+    <div class="mx-auto col-12 xl-col-10 mt-l">
+      <h3 class="story-metric-secondary text-center my-l wow fadeInUp">98% of riders felt we were effective with our safety protocol</h3>
+      <div class="wow fadeInUp">
+        {% include_relative content/safety.html %}
+      </div>
+    </div>
+  </section>
+
+  <section class="cf py-xl">
+    <div class="col-12 text-center mx-auto">
+      <h4 class="pt-xl caps bold">We celebrated</h4>
+      <h2 class="story-number condensed">
+        <span class="wow fadeIn" data-wow-delay=".1s" data-wow-offset="200">1</span><span class="wow fadeIn" data-wow-delay=".2s" data-wow-offset="200">5</span>
+      </h2>
+      <h3 class="story-metric">Years on the road</h3>
+      <p class="measure text-left mx-auto wow fadeInUp">In celebration of our 15th anniversary, over 100 alumni traveled from across the country to Virginia for a weekend of volunteering with local organizations, highlighting the work of our alumni post-Bike & Build, discussing Bike & Build’s future, and spending a few days in the great outdoors. In addition to rekindling the Bike & Build spirit, Alumni were called upon to give feedback on the future of Bike & Build to staff and board. We walked away from the weekend with a sense of invigoration. Generations of Bike & Build came together to celebrate Bike & Build’s 15th birthday while thoughtfully discussing, reflecting, and deliberating on the past and future years of the organization.</p>
+    </div>
+    <div class="mx-auto col-12 xl-col-10 wow fadeInUp">
+      {% include_relative content/alumni.html %}
+    </div>
+  </section>
+
+  <hr>
+
+  <h2 class="bold caps text-center py-xl">Cumulative Stats</h2>
+  <section class="cf py-l">
+    <div class="col col-12 m-col-6 l-col-4 py-l text-center wow fadeInUp"  data-wow-delay=".1s" data-wow-offset="200">
+      <h3 class="red condensed type-grow">15</h3>
+      <p class="caps">Years</p>
+    </div>
+    <div class="col col-12 m-col-6 l-col-4 py-l text-center wow fadeInUp"  data-wow-delay=".2s" data-wow-offset="200">
+      <h3 class="red condensed type-grow">3,500</h3>
+      <p class="caps">riders</p>
+    </div>
+    <div class="col col-12 m-col-6 l-col-4 py-l text-center wow fadeInUp"  data-wow-delay=".3s" data-wow-offset="200">
+      <h3 class="red condensed type-grow">11</h3>
+      <p class="caps">million miles</p>
+    </div>
+    <div class="col col-12 m-col-6 py-l text-center wow fadeInUp"  data-wow-delay=".4s" data-wow-offset="200">
+      <h3 class="red condensed type-grow">236,000</h3>
+      <p class="caps">volunteer hours</p>
+    </div>
+    <div class="col col-12 l-col-6 py-l text-center wow fadeInUp"  data-wow-delay=".5s" data-wow-offset="200">
+      <h3 class="red condensed type-grow">$6.4 Million</h3>
+      <p class="caps">grant donations</p>
+    </div>
+  </section>
+  <section class="my-xl wow fadeInUp" data-wow-delay=".6s" data-wow-offset="200">
+    <p class="text-center">
+      <a href="{{site.baseurl}}/financials/" class="button">
+        View 2017 Financials &rarr;
+      </a>
+    </p>
+  </section>
+
 </div>
