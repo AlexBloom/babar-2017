@@ -103,43 +103,30 @@ visibility: visible;
   line-height:1;
 }
 .type-grow-2{
-  font-size:4rem;
+  font-size:8rem;
+  font-size:20vw;
   line-height:1;
-  //margin-top:2.75rem;
   margin-bottom:0;
-  @include breakpoint(s){
-    font-size:8rem;
-    //margin-top:2.5rem;
-    margin-bottom:0;
-  }
   @include breakpoint(l){
     font-size:12rem;
-    //margin-top:2.75rem;
-    margin-bottom:0;
   }
 }
 
 
 .blueprint{
   background-image: linear-gradient(to right, rgba(0,0,0,.05) 0, rgba(0,0,0,0)1.5px);
-  //background-image: linear-gradient(to right, rgba(255,255,255,.05) 0, rgba(255,255,255,0)1.5px);
   background-repeat: repeat;
   background-size: calc(100%/6) 12rem;
 }
 
 .visible-grid{
   z-index:-5;
-  //border:1px solid rgba(0,0,0,.1);
   background-image: linear-gradient(to right, rgba(0,0,255,.08) 0, rgba(255,255,255,0)1.5px);
-
   background-repeat: repeat-x;
   background-size: calc(100%/6) 100%;
 }
 span.kern{
   letter-spacing:.02em;
-}
-.slider{
-  //background-color:$white;
 }
 #Logo{
   display:block;
@@ -226,23 +213,15 @@ html {
 
 .story-number{
   line-height:1;
-  font-size:4rem;
+  font-size:8rem;
+  font-size:20vw;
   color:$red;
   margin-left:-.03em;
   margin-bottom:0;
   text-shadow: 0 2px 8px rgba(0,0,0,.18),0 16px 24px rgba(0,0,0,0.18);
-  //text-shadow: 0px 0px 24px $navy, 0 0 100px $red;
-  //text-shadow: 1px 1px 1px $navy, 2px 2px 1px $navy, 3px 3px 1px $navy, 4px 4px 0 $navy;
-  @include breakpoint(s){
-    font-size:8rem;
-    font-size:20vw;
-  }
   @include breakpoint(m){
     font-size:12rem;
     font-size:22vw;
-  }
-  @include breakpoint(l){
-    //font-size:20rem;
   }
 }
 .story-metric{
@@ -385,7 +364,7 @@ html {
 }
 .pointer-left{
   &:before{
-    animation: highlight-left-arrow 16s ease-in-out infinite;
+    animation: highlight-left-arrow 12s ease-in-out infinite;
     left: -.75em;
     border-right:.75em solid $navy;
     border-top:.5em solid transparent;
@@ -394,7 +373,7 @@ html {
 }
 .pointer-right{
   &:after{
-    animation: highlight-right-arrow 16s ease-in-out infinite;
+    animation: highlight-right-arrow 12s ease-in-out infinite;
     right: -.75em;
     border-left:.75em solid $navy;
     border-top:.5em solid transparent;
@@ -408,26 +387,26 @@ html {
   }
 }
 @-webkit-keyframes dash {
-  0%{stroke-dasharray:10; stroke-dashoffset: 500;stroke:$red;stroke-width:4;}
+  0%{stroke-dasharray:10; stroke-dashoffset: 300;stroke:$red;stroke-width:4;}
   12%{stroke-dasharray:10; stroke-dashoffset: 0;stroke:$red;stroke-width:4;}
   13%{stroke-dasharray:0;stroke:$navy;stroke-width:2;}
   100%{stroke-dasharray:0;stroke-dashoffset: 0;}
 }
 @keyframes dash {
-  0%{stroke-dasharray:10; stroke-dashoffset: 500;stroke:$red;stroke-width:4;}
+  0%{stroke-dasharray:10; stroke-dashoffset: 300;stroke:$red;stroke-width:4;}
   12%{stroke-dasharray:10; stroke-dashoffset: 0;stroke:$red;stroke-width:4;}
   13%{stroke-dasharray:0;stroke:$navy;stroke-width:2;}
   100%{stroke-dasharray:0;stroke-dashoffset: 0;}
 }
 
 @-webkit-keyframes dash-reverse {
-  0%{stroke-dasharray:10;stroke-dashoffset: -500;stroke:$red;stroke-width:4;}
+  0%{stroke-dasharray:10;stroke-dashoffset: -300;stroke:$red;stroke-width:4;}
   12%{stroke-dasharray:10;stroke-dashoffset: 0;stroke:$red;stroke-width:4;}
   13%{stroke-dasharray:0;stroke:$navy;stroke-width:2;}
   100%{stroke-dasharray:0;stroke-dashoffset: 0;}
 }
 @keyframes dash-reverse {
-  0%{stroke-dasharray:10;stroke-dashoffset: -500;stroke:$red;stroke-width:4;}
+  0%{stroke-dasharray:10;stroke-dashoffset: -300;stroke:$red;stroke-width:4;}
   12%{stroke-dasharray:10;stroke-dashoffset: 0;stroke:$red;stroke-width:4;}
   13%{stroke-dasharray:0;stroke:$navy;stroke-width:2;}
   100%{stroke-dasharray:0;stroke-dashoffset: 0;}
@@ -473,67 +452,67 @@ html {
 
 
 .trigger-tag{
-  animation: highlight-tag 16s ease-in-out infinite;
+  animation: highlight-tag 12s ease-in-out infinite;
 }
 
 
-#labelME2SB, #labelME2SB:before{-webkit-animation-delay:0s;animation-delay:0s;}
+// #labelME2SB, #labelME2SB:before{-webkit-animation-delay:0s;animation-delay:0s;}
 #labelNUS  , #labelNUS:after{-webkit-animation-delay:2s;animation-delay:2s;}
-#labelP2S  , #labelP2S:before{-webkit-animation-delay:4s;animation-delay:4s;}
-#labelC2C  , #labelC2C:after{-webkit-animation-delay:6s;animation-delay:6s;}
-#labelCUS  , #labelCUS:after{-webkit-animation-delay:8s;animation-delay:8s;}
-#labelNC2SD, #labelNC2SD:after{-webkit-animation-delay:12s;animation-delay:10s;}
-#labelSC2SC, #labelSC2SC:before{-webkit-animation-delay:10s;animation-delay:12s;}
-#labelSUS  , #labelSUS:before{-webkit-animation-delay:14s;animation-delay:14s;}
+// #labelP2S  , #labelP2S:before{-webkit-animation-delay:4s;animation-delay:4s;}
+// #labelC2C  , #labelC2C:after{-webkit-animation-delay:6s;animation-delay:6s;}
+#labelCUS  , #labelCUS:after{-webkit-animation-delay:6s;animation-delay:6s;}
+// #labelNC2SD, #labelNC2SD:after{-webkit-animation-delay:12s;animation-delay:10s;}
+// #labelSC2SC, #labelSC2SC:before{-webkit-animation-delay:10s;animation-delay:12s;}
+#labelSUS  , #labelSUS:before{-webkit-animation-delay:10s;animation-delay:10s;}
 
 
-#pME2{
-  path{
-    animation: dash-reverse 16s ease-in-out infinite;
-  -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
-          animation-delay: 0s;
-
-        } }
+// #pME2{
+//   path{
+//     animation: dash-reverse 16s ease-in-out infinite;
+//   -webkit-animation-delay: 0s; /* Chrome, Safari, Opera */
+//           animation-delay: 0s;
+//
+//         } }
 #pNUS{
   path{
-    animation: dash 16s ease-in-out infinite;
+    animation: dash 12s ease-in-out infinite;
   -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
           animation-delay: 2s;
           }}
-#pP2S{
+// #pP2S{
+//   path{
+//     animation: dash 16s ease-in-out infinite;
+//   -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
+//           animation-delay: 4s;
+//             }}
+// #pC2C{
+//   path{
+//     animation: dash 16s ease-in-out infinite;
+//   -webkit-animation-delay: 6s; /* Chrome, Safari, Opera */
+//           animation-delay: 6s;
+//           }}
+#pCUS{
   path{
-    animation: dash 16s ease-in-out infinite;
-  -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-          animation-delay: 4s;
-            }}
-#pC2C{
-  path{
-    animation: dash 16s ease-in-out infinite;
+    animation: dash 12s ease-in-out infinite;
   -webkit-animation-delay: 6s; /* Chrome, Safari, Opera */
           animation-delay: 6s;
           }}
-#pCUS{
-  path{
-    animation: dash 16s ease-in-out infinite;
-  -webkit-animation-delay: 8s; /* Chrome, Safari, Opera */
-          animation-delay: 8s;
-          }}
-#pNC2{
-  path{
-    animation: dash-reverse 16s ease-in-out infinite;
-  -webkit-animation-delay: 10s; /* Chrome, Safari, Opera */
-          animation-delay: 10s;
-
-}}
-#pSC2{
-  path{
-    animation: dash 16s ease-in-out infinite;
-  -webkit-animation-delay: 12s; /* Chrome, Safari, Opera */
-          animation-delay: 12s;
-            }}
+// #pNC2{
+//   path{
+//     animation: dash-reverse 16s ease-in-out infinite;
+//   -webkit-animation-delay: 10s; /* Chrome, Safari, Opera */
+//           animation-delay: 10s;
+//
+// }}
+// #pSC2{
+//   path{
+//     animation: dash 16s ease-in-out infinite;
+//   -webkit-animation-delay: 12s; /* Chrome, Safari, Opera */
+//           animation-delay: 12s;
+//             }}
 #pSUS{
   path{
-    animation: dash 16s ease-in-out infinite;
-  -webkit-animation-delay: 14s; /* Chrome, Safari, Opera */
-          animation-delay: 14s;
+    animation: dash 12s ease-in-out infinite;
+  -webkit-animation-delay: 10s; /* Chrome, Safari, Opera */
+          animation-delay: 10s;
             }}
